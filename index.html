@@ -33,6 +33,24 @@
         h1, h2 {
             margin-bottom: 1rem;
         }
+        .float-right {
+            float: right;
+            margin: 0 0 1rem 1rem;
+            max-width: 50%;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0 1rem 1rem 0;
+            max-width: 50%;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
     </style>
 </head>
 <body>
@@ -48,9 +66,14 @@
         <h2>About Me</h2>
         <p>
             Hello there! I'm Qiuye Zhang, an second-year AI & CS student at the University of Edinburgh with a passion for the fascinating world of modeling the human brain. 
+            <img src="images/me/01.jpeg" alt="" class="float-left">
         </p>
         <p>
+            <img src="images/me/02.jpeg" alt="Me dancing in London" class="float-right">
+            <img src="images/me/03.jpeg" alt="Me after a recent class" class="float-right">
             In addition to my academic pursuits, I am a semi-professional ballet and contemporary dancer.
+            <div class="clearfix"></div>
+
         </p>
     </section>
 
