@@ -1,0 +1,115 @@
+---
+layout: default
+title: Research
+permalink: /research/
+description: Qiuye Zhang's research in computational psychiatry at University College London.
+---
+{% assign r = site.data.research %}
+<h1 class="page-title">Research</h1>
+<p class="lede">{{ r.summary }}</p>
+<p class="interests"><span class="label">Interests</span><br>{{ r.interests }}</p>
+<p><a class="button" href="{{ '/assets/Qiuye_Zhang_CV.pdf' | relative_url }}">Download CV (PDF)</a></p>
+
+<section>
+  <h2 class="section-title">Current work</h2>
+  <article class="entry">
+    <div class="when mono">{% for w in r.current.when %}{{ w }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
+    <div>
+      <h3>{{ r.current.title }}</h3>
+      <p class="meta">{{ r.current.meta }}</p>
+      {% for p in r.current.text %}<p>{{ p }}</p>
+      {% endfor %}
+      {% if r.current.show_diagram %}
+      <figure class="schematic">
+        <div class="scroll">
+        <svg viewBox="0 0 520 168" role="img" aria-label="Schematic of a reversal-learning task: two options whose chances of reward swap between high and low at three unsignalled points.">
+          <text x="60" y="12">reward probability</text>
+          <path class="axis" d="M60 22V132H504"/>
+          <text x="52" y="46" text-anchor="end">high</text>
+          <text x="52" y="106" text-anchor="end">low</text>
+          <path class="opt-b" d="M60 102H170V42H282V102H402V42H504"/>
+          <path class="opt-a" d="M60 42H170V102H282V42H402V102H504"/>
+          <text class="a" x="68" y="34">option A</text>
+          <text class="b" x="68" y="120">option B</text>
+          <path class="axis" d="M170 132v6M282 132v6M402 132v6"/>
+          <text x="170" y="152" text-anchor="middle">reversal</text>
+          <text x="282" y="152" text-anchor="middle">reversal</text>
+          <text x="402" y="152" text-anchor="middle">reversal</text>
+          <text x="504" y="152" text-anchor="end">trials</text>
+        </svg>
+        </div>
+        <figcaption>Schematic of a probabilistic reversal-learning task. One option pays off more often than the other, then the two swap without warning.</figcaption>
+      </figure>
+      {% endif %}
+    </div>
+  </article>
+</section>
+
+{% if r.publications.size > 0 %}
+<section>
+  <h2 class="section-title">Publications</h2>
+  {% for p in r.publications %}
+  <article class="entry">
+    <div class="when mono">{{ p.year }}</div>
+    <div>
+      <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+      <p class="meta">{{ p.authors }}{% if p.venue %}. {{ p.venue }}{% endif %}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section>
+  <h2 class="section-title">Earlier projects</h2>
+  {% for p in r.projects %}
+  <article class="entry">
+    <div class="when mono">{{ p.when }}</div>
+    <div>
+      <h3>{{ p.title }}</h3>
+      <p class="meta">{{ p.meta }}</p>
+      <p>{{ p.text }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">Conference presentations</h2>
+  {% for p in r.presentations %}
+  <article class="entry">
+    <div class="when mono">{{ p.when }}</div>
+    <div>
+      <h3>{{ p.title }}</h3>
+      <p class="meta">{{ p.meta }}</p>
+      <p>{{ p.text }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">Training and summer schools</h2>
+  {% for p in r.training %}
+  <article class="entry compact">
+    <div class="when mono">{{ p.when }}</div>
+    <div>
+      <h3>{{ p.title }}</h3>
+      <p class="meta">{{ p.meta }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">Education</h2>
+  {% for p in r.education %}
+  <article class="entry compact">
+    <div class="when mono">{{ p.when }}</div>
+    <div>
+      <h3>{{ p.title }}</h3>
+      <p class="meta">{{ p.place }}{% if p.result %}. {{ p.result }}{% endif %}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>

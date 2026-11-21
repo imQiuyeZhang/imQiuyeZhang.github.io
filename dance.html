@@ -1,0 +1,60 @@
+---
+layout: default
+title: Dance
+permalink: /dance/
+description: Ballet and contemporary dance photographs, and a little running and open-water swimming.
+---
+<h1 class="page-title">Dance</h1>
+<p class="lede">I dance ballet and contemporary, for the blend of discipline and creative expression.</p>
+
+{% for group in site.data.gallery %}
+<section>
+  <h2 class="section-title">{{ group.title }}</h2>
+  {% if group.note %}<p class="section-note mono">{{ group.note }}</p>{% endif %}
+  <div class="gallery">
+    {% for row in group.rows %}
+    <div class="gallery-row">
+      {% for p in row %}
+      {% assign full = '/assets/img/dance/' | append: p.file | append: '.jpg' | relative_url %}
+      {% assign small = '/assets/img/dance/' | append: p.file | append: '-800.jpg' | relative_url %}
+      <figure style="--ar: {{ p.w | times: 1.0 | divided_by: p.h | round: 3 }}">
+        <a href="{{ full }}">
+          <img src="{{ small }}" srcset="{{ small }} 800w, {{ full }} {{ p.w }}w"
+               sizes="(max-width: 34rem) 100vw, {% if row.size == 1 %}70rem{% else %}34rem{% endif %}"
+               width="{{ p.w }}" height="{{ p.h }}" loading="lazy" alt="{{ p.alt }}">
+        </a>
+      </figure>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+{% include places.html title="Favourite places to dance" groups=site.data.places.dance %}
+
+<section>
+  <h2 class="section-title">Off the floor</h2>
+  <div class="off-floor">
+    <figure>
+      <video controls playsinline preload="none" width="1280" height="696"
+             poster="{{ '/assets/img/dance/sea-swim-poster.jpg' | relative_url }}">
+        <source src="{{ '/assets/video/sea-swim-2026.mp4' | relative_url }}" type="video/mp4">
+      </video>
+      <figcaption>Sea swim, August 2026</figcaption>
+    </figure>
+    <div>
+      <p>I came back to running in 2023 and learned to swim in 2024. Both began as ways to recover from stress, and I have written about each.</p>
+      <ul class="plain-list">
+        {% for post in site.posts %}{% if post.tags contains 'running' or post.tags contains 'swimming' %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="pair">
+  {% include places.html title="Favourite places to run" groups=site.data.places.run %}
+  {% include places.html title="Favourite places to swim" groups=site.data.places.swim %}
+</div>

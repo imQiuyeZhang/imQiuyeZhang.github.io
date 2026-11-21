@@ -1,0 +1,99 @@
+# Everything on the Research page comes from this file.
+# To add something, copy an existing item and change the text.
+
+summary: >-
+  I study how people learn and make decisions under uncertainty, using
+  computational models.
+
+interests: >-
+  Computational psychiatry; reinforcement-learning and Bayesian models of
+  learning, perception and decision-making under uncertainty; individual
+  differences and the reliability of model-based measures.
+
+# Kept deliberately brief while the paper is being written. When it is out,
+# add more paragraphs under "text" and set show_diagram to true to bring back
+# the drawing of the reversal-learning task.
+current:
+  title: Probabilistic reversal learning and computational heterogeneity
+  when:
+    - Oct 2026 – present
+    - Jan – Sep 2026
+  meta: >-
+    Research Assistant, and before that MRes thesis, University College London.
+    Supervisor: Prof. Quentin Huys
+  text:
+    - More detail will follow once the work is published.
+  show_diagram: false
+
+# Add papers here when they exist. The Publications section appears on the
+# page as soon as this list has an item, for example:
+#   - title: Paper title
+#     authors: Zhang, Q., & Huys, Q. J. M.
+#     venue: Journal name
+#     year: 2027
+#     url: https://doi.org/...
+publications: []
+
+projects:
+  - title: Differences in reinforcement learning in dynamic environments in depression
+    when: Sep 2024 – Apr 2025
+    meta: "BSc Honours thesis, University of Edinburgh. Supervisor: Prof. Peggy Seriès"
+    text: >-
+      Used probabilistic learning tasks to study deficits in adapting to
+      volatility in depression, analysing behavioural data with
+      reinforcement-learning models and Hierarchical Gaussian Filters.
+  - title: A decision-theoretic model of binocular rivalry
+    when: Aug 2024 – Apr 2025
+    meta: "Research project, TU Dresden. Supervisor: Dr. Shervin Safavi"
+    text: >-
+      Co-developed a three-state perceptual partially observable Markov
+      decision process (POMDP) model of binocular rivalry, aiming to reproduce
+      empirical findings and clarify perceptual decision-making under
+      uncertainty.
+  - title: Using brain modularity to predict risk of cardiovascular disease
+    when: Oct 2023 – May 2024
+    meta: "Research project, Carnegie Mellon University. Supervisor: Prof. Timothy Verstynen"
+    text: >-
+      Analysed beta coefficients from fMRI data to assess brain modularity
+      linked to cardiovascular risk, and ran statistical analyses to identify
+      neurophysiological predictors of blood pressure reactivity.
+
+presentations:
+  - title: A reinforcement learning model of task-modulated perception
+    when: Jun 2025
+    meta: Poster, Multi-disciplinary Conference on Reinforcement Learning and Decision Making (RLDM)
+    text: The perceptual POMDP model of binocular rivalry developed at TU Dresden.
+  - title: "Brain plasticity and neural networks: applications in computational psychiatry"
+    when: Apr 2023
+    meta: Poster, BCS Women Lovelace Colloquium. Best Poster Award
+    text: >-
+      On applying human brain learning mechanisms to artificial neural
+      networks, and the potential implications for computational psychiatry.
+
+training:
+  - title: Computational Psychiatry Course
+    when: Sep 2024
+    meta: Translational Neuromodeling Unit, Zurich
+  - title: Cognitive Neuroimaging Skills Training
+    when: Sep 2024
+    meta: University of Cambridge
+  - title: Model-based Neuroscience Summer School
+    when: Jul 2023
+    meta: University of Amsterdam
+  - title: Computational Neuroscience Summer School
+    when: Jul 2022
+    meta: Neuromatch Academy
+
+education:
+  - title: MRes in Brain Sciences
+    when: 2025 – 2026
+    place: University College London
+    result: Distinction
+  - title: BSc (Hons) in Artificial Intelligence and Computer Science
+    when: 2021 – 2025
+    place: University of Edinburgh
+    result: First Class Honours
+  - title: Exchange student, School of Computer Science
+    when: 2023 – 2024
+    place: Carnegie Mellon University
+    result: Dean's List (High Honours)

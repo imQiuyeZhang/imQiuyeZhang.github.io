@@ -1,0 +1,9 @@
+# Full-size originals and old drafts. Kept on this computer, never published.
+_originals/
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+.DS_Store

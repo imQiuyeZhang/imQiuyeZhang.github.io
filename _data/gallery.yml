@@ -1,0 +1,51 @@
+# Photos on the Dance page. Each group has a title and one or more rows.
+# Each photo needs two files in assets/img/dance/: name.jpg (about 1600px on
+# the long edge) and name-800.jpg (800px). w and h are the size of name.jpg
+# in pixels; they are used to line the photos up in a row.
+
+- title: Cherry blossom
+  note: The Meadows, Edinburgh, May 2025
+  rows:
+    - - file: blossom-leap
+        w: 1206
+        h: 836
+        alt: Qiuye in a sissonne, wearing a pale pink tutu, in front of a row of cherry trees in blossom.
+    - - file: blossom-arabesque
+        w: 1600
+        h: 2409
+        alt: Qiuye in an arabesque on pointe under a cherry tree, with a church spire in the distance.
+      - file: blossom-portrait
+        w: 1600
+        h: 2135
+        alt: Qiuye seen from behind, one arm reaching towards the blossom.
+      - file: blossom-extension
+        w: 1600
+        h: 2505
+        alt: Qiuye on pointe with one leg extended high to the side, a hand resting on the trunk of a cherry tree.
+
+- title: Pittsburgh Ballet Theatre
+  note: Pittsburgh, October 2023
+  rows:
+    - - file: pbt-barre-2
+        w: 1284
+        h: 718
+        alt: Qiuye in silhouette at the barre, arching back with one arm overhead, in a studio with floor-to-ceiling windows.
+    - - file: pbt-barre-1
+        w: 1284
+        h: 720
+        alt: Qiuye in silhouette at the barre, balancing on one leg, against a bright sky through the studio windows.
+      - file: pbt-barre-3
+        w: 1284
+        h: 704
+        alt: Qiuye in silhouette beside the barre, bending forward with one arm raised.
+
+- title: Studio and shore
+  rows:
+    - - file: studio-leap
+        w: 1181
+        h: 581
+        alt: Qiuye leaping across a dance studio.
+      - file: beach-leap
+        w: 1284
+        h: 739
+        alt: Qiuye leaping on a sandy beach at the edge of the sea.

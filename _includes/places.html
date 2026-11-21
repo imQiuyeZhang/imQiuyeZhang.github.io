@@ -1,0 +1,17 @@
+<section>
+  <h2 class="section-title">{{ include.title }}</h2>
+  {% for group in include.groups %}
+  <article class="entry">
+    <div class="when mono">{{ group.city }}</div>
+    <div>
+      {% for s in group.places %}
+      <div class="studio">
+        <h3>{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
+        {% if s.where %}<p class="meta">{{ s.where }}</p>{% endif %}
+        {% if s.note %}<p>{{ s.note }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,56 @@
+# Favourite places to dance, run and swim, shown on the Dance page.
+# "where" and "url" are optional. For running and swimming spots the url is a
+# Google Maps link. To say something about a place, add a line
+# under it like:
+#     note: Why I love it here.
+
+dance:
+  - city: Edinburgh
+    places:
+      - name: Dance Base
+        where: Grassmarket
+        url: https://www.dancebase.co.uk/
+  - city: London
+    places:
+      - name: Danceworks
+        where: Mayfair
+        url: https://www.danceworks.com/
+      - name: The Place
+        where: Euston
+        url: https://theplace.org.uk/
+      - name: Pineapple Dance Studios
+        where: Covent Garden
+        url: https://www.pineapple.uk.com/
+  - city: Pittsburgh
+    places:
+      - name: Pittsburgh Ballet Theatre
+        where: Strip District
+        url: https://pbt.org/
+
+run:
+  - city: Edinburgh
+    places:
+      - name: The Meadows
+        url: https://www.google.com/maps/search/?api=1&query=The+Meadows%2C+Edinburgh
+      - name: Holyrood Park
+        url: https://www.google.com/maps/search/?api=1&query=Holyrood+Park%2C+Edinburgh
+  - city: London
+    places:
+      - name: Queen Elizabeth Olympic Park
+        url: https://www.google.com/maps/search/?api=1&query=Queen+Elizabeth+Olympic+Park%2C+London
+
+swim:
+  - city: Zurich
+    places:
+      - name: Lake Zurich
+        url: https://www.google.com/maps/search/?api=1&query=Lake+Zurich%2C+Switzerland
+  - city: North West England
+    places:
+      - name: Pennington Flash
+        url: https://www.google.com/maps/search/?api=1&query=Pennington+Flash+Country+Park%2C+Leigh
+        where: Leigh, between Liverpool and Manchester
+  - city: Mallorca
+    places:
+      - name: Cala Nova
+        where: Sant Agustí, Palma
+        url: https://www.google.com/maps/search/?api=1&query=Cala+Nova%2C+Sant+Agust%C3%AD%2C+Palma%2C+Mallorca
