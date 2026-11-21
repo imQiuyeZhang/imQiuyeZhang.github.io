@@ -252,6 +252,16 @@ figcaption {
   margin: 0 0 1rem;
 }
 
+.seeking {
+  max-width: 34rem;
+  margin: 0 0 1rem;
+}
+
+.seeking strong {
+  font-weight: 500;
+  color: var(--blossom);
+}
+
 .hero-text .contact {
   margin-top: 1.75rem;
 }

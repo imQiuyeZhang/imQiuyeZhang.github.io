@@ -5,6 +5,13 @@ summary: >-
   I study how people learn and make decisions under uncertainty, using
   computational models.
 
+# Shown on the home page and at the top of the Research page. Delete
+# seeking_title and seeking below to hide it.
+seeking_title: Open to PhD opportunities.
+seeking: >-
+  I am looking for a PhD studentship, and I'm always happy to discuss research
+  and collaboration.
+
 interests: >-
   Computational psychiatry; reinforcement-learning and Bayesian models of
   learning, perception and decision-making under uncertainty; individual
