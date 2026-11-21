@@ -7,6 +7,10 @@ author: Qiuye Zhang
 email: iamqiuyezhang@gmail.com
 github_username: imQiuyeZhang
 
+# Proves to Google Search Console that this site is mine.
+webmaster_verifications:
+  google: Ba7hiUU7cu9jYjQ6XwH3y12y2Dnp_a-2mZ-ZBTm_FWA
+
 url: https://imqiuyezhang.github.io
 baseurl: ""
 lang: en
