@@ -17,9 +17,9 @@ interests: >-
   learning, perception and decision-making under uncertainty; individual
   differences and the reliability of model-based measures.
 
-# Kept deliberately brief while the paper is being written. When it is out,
-# add more paragraphs under "text" and set show_diagram to true to bring back
-# the drawing of the reversal-learning task.
+# Kept deliberately brief for now. To say more, add paragraphs under "text"
+# and set show_diagram to true to bring back the drawing of the
+# reversal-learning task.
 current:
   title: Probabilistic reversal learning and computational heterogeneity
   when:
@@ -29,7 +29,7 @@ current:
     Research Assistant, and before that MRes thesis, University College London.
     Supervisor: Prof. Quentin Huys
   text:
-    - More detail will follow once the work is published.
+    - More detail will follow later.
   show_diagram: false
 
 # Add papers here when they exist. The Publications section appears on the
