@@ -5,7 +5,7 @@ layout: default
   <div class="hero-text">
     <span class="label">Research assistant, University College London</span>
     <h1>I think and <em>move</em>.</h1>
-    <p>I'm Qiuye Zhang, a research assistant in computational psychiatry at University College London. Away from the desk I dance ballet and contemporary, run, and swim in open water. This site is where I keep the research, the dancing, and what I write about how life feels along the way.</p>
+    <p>I'm Qiuye Zhang, a research assistant in computational psychiatry at University College London. Away from the desk I dance ballet and contemporary, run, and swim in open water. This site is where I keep the research and the dancing.</p>
     {% include seeking.html %}
     <ul class="contact">
       <li><a href="mailto:{{ site.email }}">Email</a></li>
@@ -41,18 +41,4 @@ layout: default
     <h2>Dance</h2>
     <p>Ballet and contemporary, in the studio and under the cherry blossom.</p>
   </a>
-  <a class="door" href="{{ '/writing/' | relative_url }}">
-    <h2>Writing</h2>
-    <p>Notes on mental health, running, swimming and rest.</p>
-  </a>
 </nav>
-
-<section>
-  <h2 class="section-title">Latest writing</h2>
-  {% for post in site.posts limit: 3 %}
-  <article class="entry compact">
-    <time class="when mono" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-  </article>
-  {% endfor %}
-</section>

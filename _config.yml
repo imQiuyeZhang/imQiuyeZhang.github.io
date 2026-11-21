@@ -1,8 +1,8 @@
 title: Qiuye Zhang
-tagline: Computational psychiatry, dance and writing
+tagline: Computational psychiatry and dance
 description: >-
   Qiuye Zhang is a research assistant in computational psychiatry at
-  University College London, a dancer and a writer.
+  University College London, and a dancer.
 author: Qiuye Zhang
 email: iamqiuyezhang@gmail.com
 github_username: imQiuyeZhang
@@ -16,14 +16,11 @@ baseurl: ""
 lang: en
 timezone: Europe/London
 
-permalink: /writing/:title/
 markdown: kramdown
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-redirect-from
 
 exclude:
   - _originals
